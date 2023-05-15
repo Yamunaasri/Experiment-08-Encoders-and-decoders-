@@ -111,10 +111,10 @@ endmodule
 
 ### TRUTH TABLE 
 ### ENCODER
-![Uploading image.png…]()
+![image](https://github.com/Yamunaasri/Experiment-08-Encoders-and-decoders-/assets/115707860/a4ad5512-4537-4ad9-8e63-a0e425827ad5)
 
 ### DECODER
-![Uploading Screenshot 2023-05-15 100240.png…]()
+![Screenshot 2023-05-15 100240](https://github.com/Yamunaasri/Experiment-08-Encoders-and-decoders-/assets/115707860/c8e0c5cf-d0f0-4a2f-846a-74eb80b4d223)
 
 ### RESULTS 
 Thus the program to desing encoder and decoder is completed.
