@@ -62,35 +62,59 @@ D7 = X Y Z
 ### PROGRAM 
 /*
 Program for Endocers and Decoders  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: T.S.Yamunaasri
+RegisterNumber:  212222240117
 */
 
+### ENCODER
+/*
+module encoder (d0,d1,d2,d3,d4,d5,d6,d7,x,y,z);
+input d0,d1,d2,d3,d4,d5,d6,d7;
+output x,y,z;
+or (x,d4,d5,d6,d7);
+or (y,d2,d3,d5,d7);
+or (z,d1,d3,d5,d7);
+endmodule
+*/
 
-
-
-
+### DECODER
+/*
+module decoder (a0,a1,a2,y0,y1,y2,y3,y4,y5,y6,y7);
+input a0,a1,a2;
+output y0,y1,y2,y3,y4,y5,y6,y7;
+wire a0bar,a1bar,a2bar;
+not (a0bar,a0);
+not (a1bar,a1);
+not (a2bar,a2);
+and (y0,a0bar,a1bar,a2bar);
+and (y1,a0bar,a1bar,a2);
+and (y2,a0bar,a1,a2bar);
+and (y3,a0bar,a1,a2);
+and (y4,a0,a1bar,a2bar);
+and (y5,a0,a1bar,a2);y6,a0,a1,a2bar);
+and (y7,a0,a1,a2);
+endmodule
+*/
 
 ### RTL LOGIC  
-
-
-
-
-
-
-
+### ENCODER
+![image](https://github.com/Yamunaasri/Experiment-08-Encoders-and-decoders-/assets/115707860/c0c9b0e5-1fd2-4e94-87c5-3ca5da35ac73)
+### DECODER
+![image](https://github.com/Yamunaasri/Experiment-08-Encoders-and-decoders-/assets/115707860/1f61aca5-e84d-49c6-8756-15583f2faef5)
 
 ### TIMING DIGRAMS  
 
-
-
-
+### ENCODER
+![image](https://github.com/Yamunaasri/Experiment-08-Encoders-and-decoders-/assets/115707860/786c8371-7f59-4eb5-a5ef-08545acd3626)
+### DECODER
+![image](https://github.com/Yamunaasri/Experiment-08-Encoders-and-decoders-/assets/115707860/f41dfb45-e455-4b8d-bd9e-0eee86fbda6f)
 
 ### TRUTH TABLE 
+### ENCODER
+![Uploading image.png…]()
 
-
-
-
-
+### DECODER
+![Uploading Screenshot 2023-05-15 100240.png…]()
 
 ### RESULTS 
+Thus the program to desing encoder and decoder is completed.
